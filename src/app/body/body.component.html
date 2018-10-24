@@ -1,0 +1,115 @@
+<div class="container">
+
+    <div class="row">
+      <div class="col-12">
+        <div class="col-3">
+<h2>
+  SELECT FILE
+</h2>
+<form [formGroup]="uploadform">
+<table>
+  <tbody>
+      <tr>
+          <td>
+            <input type="selectfile" formControlName="selectfile">
+          </td>
+      
+        <td>
+          single
+        </td>
+           <td>
+          <input type="radio"  name="f1" formcontrolName="">
+              <input type="file" formControlName="">
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Multiple
+        </td>
+        <td>
+          <input type="radio"   name="f1" formControlName="">
+            <input type="file" formControlName=""> 
+        </td>
+      
+            </tr>
+            <tr>
+              <td>
+                  <input type="selectfile" formControlName="selectfile">
+              </td>
+             
+            </tr>
+            <tr>
+              <td>
+                <input type="radio"   name="f1" formControlName="">Multiple
+                  <input type="file" formControlName=""> 
+              </td>
+  </tbody>
+</table>
+</form>
+</div>
+<div class="col-9">
+  <h3>
+    Upload File
+  </h3>
+<table>
+    <thead>
+        <tr>
+            <th width="50%">Name</th>
+            <th>Size</th>
+            <th>Progress</th>
+            <th>Status</th>
+            <th><input type="checkbox">Primary</th>
+        </tr>
+        </thead>
+        
+  <tbody>
+    <tr>
+      </tr>
+  </tbody>
+</table>
+<hr>
+<table>
+  <tr>
+      <td>
+        <button type="button">Remove</button>
+      </td>
+    </tr>
+    <tr>
+    <td>
+    Queue Status:
+    </td>
+      <td>
+          <progress-bar [progress]="200" [color]="'#488aff'">Queue Progress
+            </progress-bar>
+      </td>
+    </tr>
+    <tr>
+      <td>
+          <button mat-raised-button color="primary">Remove All</button>
+      </td>
+                   <td>
+        <button type="button">upload all</button>
+      </td>
+      <td>
+        <button type="button" class="btn btn-danger">
+          <span>
+              <i class="fas fa-ad"></i>
+          </span>
+          delete all
+        </button>
+      </td>
+      <td>
+          <div class="btn btn_red"><span class="icon"></span><a href="#">Crimson</a><span></span></div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <input type="submit" (click)="clickme">
+          
+      </td>
+    </tr>
+    
+  </tbody>
+</table>
+</div>
+
